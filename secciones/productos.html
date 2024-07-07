@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda de Productos</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<header>
+    <h1>Tienda Verdolaga</h1>
+    <img src="../imagenes/Escudo_del_Club_Ferro_Carril_Oeste.svg.png" alt="Logo de Mi Tienda Online" class="logo">
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="l">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="mainProductos">
+    <section class="buscador">
+        <div>
+            <input type="text" id="busqueda" placeholder="Buscar productos...">
+            <button onclick="buscarProductos()">Buscar</button>
+        </div>
+    </section>
+    <section class="categoriaUno">
+        <section class="categoria">
+            <h2>REMERAS</h2>
+            <div class="producto">
+                <img src="../imagenes/remera-titular-mangaCorta.jpg" alt="remera titular">
+                <h3>Camiseta Ferro Titular Lyon</h3>
+                <p>Modelo TITULAR 2024.</p>
+                <p>Precio: $57.000,00</p>
+                <button onclick="agregarProducto('Camiseta Ferro Titular Lyon', 57000)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="../imagenes/remera-titular.jpg" alt="remera titular">
+                <h3>Camiseta Ferro Manga Larga</h3>
+                <p>Modelo TITULAR MANGA LARGA 2024.</p>
+                <p>Precio: $57.000,00</p>
+                <button onclick="agregarProducto('Camiseta Ferro Manga Larga', 57000)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="../imagenes/remera-suplente-mangaCorta.png" alt="remera suplente manga corta">
+                <h3>Camiseta Ferro Suplente Lyon</h3>
+                <p>Modelo SUPLENTE 2024.</p>
+                <p>Precio: $57.000,00</p>
+                <button onclick="agregarProducto('Camiseta Ferro Suplente', 57000)">Comprar</button>
+            </div>
+        </section>
+        <section class="categoria">
+            <h2>SHORTS</h2>
+            <div class="producto">
+                <img src="../imagenes/short-titular.jpg" alt="short titular">
+                <h3>Short Ferro Titular Lyon 2024 </h3>
+                <p>Modelo TITULAR 2024.</p>
+                <p>Precio: $33800</p>
+                <button onclick="agregarProducto('Short Ferro Titular', 33800)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="../imagenes/short-suplente.jpg" alt="short suplente">
+                <h3>Short Ferro Suplente Lyon 2024</h3>
+                <p>Modelo SUPLENTE 2024.</p>
+                <p>Precio: $33800</p>
+                <button onclick="agregarProducto('Short Ferro Suplente', 33800)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="../imagenes/short-arquero.png" alt="short arquero">
+                <h3>Short Lyon Arquero 2023 Azul </h3>
+                <p>Modelo de Arquero.</p>
+                <p>Precio: $25000</p>
+                <button onclick="agregarProducto('Short Lyon Arquero', 25000)">Comprar</button>
+            </div>
+        </section>
+        <section class="categoria">
+            <h2>CONJUNTOS</h2>
+            <div class="producto">
+                <img src="../imagenes/canguro.jpg" alt="Canguro Ferro Urbano">
+                <h3>Canguro Ferro Urbano</h3>
+                <p>Modelo Verde Inglés FERRO CARRIL OESTE.</p>
+                <p>Precio: $39.000,00</p>
+                <button onclick="agregarProducto('Canguro Ferro Urbano', 39000)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="../imagenes/rompeviento.jpg" alt="rompevientos">
+                <h3>Rompevientos Ferro Lyon 2024</h3>
+                <p>Modelo 2024.</p>
+                <p>Precio: $74.000,00</p>
+                <button onclick="agregarProducto('Rompevientos Ferro', 74000)">Comprar</button>
+            </div>
+            <div class="producto">
+                <img src="../imagenes/buzo-salida.png" alt="Buzo Canguro de salida">
+                <h3>Canguro Ferro Salida Lyon 2024</h3>
+                <p>Modelo Verde 2024.</p>
+                <p>Precio: $57000</p>
+                <button onclick="agregarProducto('Canguro Ferro Salida', 57000)">Comprar</button>
+            </div>
+        </section>
+    </section>
+    <div class="divCarrito">
+        <h3>Carrito de Compras</h3>
+        <div id="carrito"></div>
+
+    </div>
+</main>
+<footer class="footer">
+    <p>Juliana Ponce &copy; 2024</p>
+</footer>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
